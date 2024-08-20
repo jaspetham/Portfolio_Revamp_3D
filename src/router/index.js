@@ -26,6 +26,11 @@ const router = createRouter({
       path: "/history",
       name: "history",
       component: HistoryView
+    },
+    // Catch-all route for 404 errors
+    {
+      path: "/:pathMatch(.*)*",
+      redirect: "/"
     }
   ]
 });
