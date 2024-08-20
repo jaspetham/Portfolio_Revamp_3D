@@ -1,6 +1,7 @@
 <script setup>
 import { usePageStore } from "@/stores/page";
 import { storeToRefs } from "pinia";
+import DownloadCV from "./DownloadCV.vue";
 const store = usePageStore();
 const { globalScrollPos } = storeToRefs(store);
 const { setMenuState } = store;
@@ -16,7 +17,7 @@ const { setMenuState } = store;
           <RouterLink to="history">| history</RouterLink>
         </li>
         <li class="menu-item ml-3 menu-download">
-          <a class="btn" href="/2024_CV.pdf" download> Download CV </a>
+          <DownloadCV/>
         </li>
       </ul>
     </div>

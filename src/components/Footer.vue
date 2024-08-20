@@ -1,5 +1,6 @@
 <script setup>
 import { RouterLink } from 'vue-router';
+import DownloadCV from './DownloadCV.vue';
 </script>
 
 <template>
@@ -9,7 +10,7 @@ import { RouterLink } from 'vue-router';
       <li class="menu-item menu-about"><RouterLink to="about">about</RouterLink></li>
       <li class="menu-item menu-history"><RouterLink to="history">history</RouterLink></li>
       <li class="menu-item menu-download">
-        <a class="btn" href="/2024_CV.pdf" download> Download CV </a>
+        <DownloadCV/>
       </li>
     </ul>
   </div>

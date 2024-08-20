@@ -3,6 +3,7 @@ import SectionTitle from '@/components/SectionTitle.vue';
 import history from '@/assets/json/history.json';
 import { ref } from 'vue';
 import Container from '@/components/Container.vue';
+import DownloadCV from '@/components/DownloadCV.vue';
 
 const graduations = ref(history.graduations);
 const works = ref(history.works);
@@ -59,9 +60,7 @@ const works = ref(history.works);
         </div>
         <div class="divider"></div>
         <div class="flex justify-center">
-          <a class="btn" href="/2024_CV.pdf" download>
-            Download CV
-          </a>
+          <DownloadCV/>
         </div>
       </div>
     </div>
