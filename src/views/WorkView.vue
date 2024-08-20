@@ -8,7 +8,7 @@ const projects = ref(works);
 
 <template>
   <Container>
-    <SectionTitle :title="'abc'" :subTitles="['123', '321']" />
+    <SectionTitle :title="'Work'" :subTitles="['Personal', 'Projects']" />
     <div class="list">
       <a
         class="work-item"
