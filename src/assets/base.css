@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Mono&family=Rubik:wght@300;400&display=swap');
+:root{
+  --hsl-main: 43, 19%, 60%;
+  --clr-main: #aca186;
+  --ff-primary:'Rubik', sans-serif;
+  --ff-secondary:'Noto Sans Mono', monospace;
+  --box-shadow:11, 86, 199,.5;
+}
+body {
+  overscroll-behavior: none;
+  -webkit-font-smoothing: antialiased;
+  color:hsla(var(--hsl-main), 1);
+  font-family: var(--ff-primary);
+  overflow-x:hidden;
+}
+body::-webkit-scrollbar {
+  display: none;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.svg-inline--fa{
+  height:auto;
+}
+
+#container {
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  margin: 0;
+  padding: 0;
+  object-fit: cover;
+  opacity: 1;
+  background: radial-gradient(circle at 3% 5%, #253239 0%, #0b0c0d 50%);
+}
+
+canvas {
+  display: block;
+}
+.btn{
+  padding:1rem 2rem;
+  background:var(--clr-main);
+  color:white;
+  border-radius: 15px;
+  text-transform: uppercase;
+}
+
+.divider{
+  margin-top: 55vh;
+  margin-bottom: 5vh;
+}
+
+.scroll-container{
+    overflow-y: auto;
+    overflow-x: hidden;
+    height:100vh;
+}
+.scroll-container::-webkit-scrollbar{
+    display:none;
+}
+
+@media only screen and (max-width: 801px){
+    .divider{
+      margin-top:30vh;
+      margin-bottom:0;
+    }
+}

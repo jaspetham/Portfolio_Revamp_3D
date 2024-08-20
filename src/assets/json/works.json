@@ -1,0 +1,104 @@
+[
+  {
+    "url": "https://jasper-3d-map.netlify.app/",
+    "type": "Personal Project |3D Map with Mapbox Search",
+    "name": "NextJS, 3D Map",
+    "imgSrc": "/assets/img/map-clone.png"
+  },
+  {
+    "url": "https://jasper-apple-clone.netlify.app/",
+    "type": "Personal Project |Apple Clone",
+    "name": "VueJS, Apple Clone",
+    "imgSrc": "/assets/img/appleClone.png"
+  },
+  {
+    "url": "https://jaspetham.github.io/Super-Nova/",
+    "type": "Personal Project",
+    "name": "NuxtJS, Super Nova",
+    "imgSrc": "/assets/img/work1-min.jpg"
+  },
+  {
+    "url": "https://jasper-keynabalu.netlify.app",
+    "type": "Personal Project | Facebook Group",
+    "name": "NuxtJS, Keyboard Anonymous",
+    "imgSrc": "/assets/img/work2-min.jpg"
+  },
+  {
+    "url": "https://jaspetham.github.io/space-solution/",
+    "type": "Personal Project | Frontend Challenge",
+    "name": "React, Space Solution",
+    "imgSrc": "/assets/img/work3-min.jpg"
+  },
+  {
+    "url": "https://jasper-zest-production.netlify.app/",
+    "type": "Client Project |",
+    "name": "React, Zest Production",
+    "imgSrc": "/assets/img/zest-production-min.png"
+  },
+  {
+    "url": "https://jasper-bite-family.netlify.app/",
+    "type": "Client Project | On Hold",
+    "name": "React, Bite Family",
+    "imgSrc": "/assets/img/bite-family-min.png"
+  },
+  {
+    "url": "https://jasper-threejs-portfolio-v1.netlify.app/",
+    "type": "Personal Project | Portfolio",
+    "name": "ThreeJS, Portfolio Test",
+    "imgSrc": "/assets/img/work2-min.jpg"
+  },
+  {
+    "url": "https://jasper-threejs-organic-ball.netlify.app/",
+    "type": "Personal Project | 3D Expriments",
+    "name": "ThreeJS, Organic Ball",
+    "imgSrc": "/assets/img/organic-ball-min.png"
+  },
+  {
+    "url": "https://jasper-threejs-galaxy-generator.netlify.app/",
+    "type": "Personal Project | 3D Expriments",
+    "name": "ThreeJS, Galaxy Demo",
+    "imgSrc": "/assets/img/work0-min.jpg"
+  },
+  {
+    "url": "https://jaspetham.github.io/Wave-Demo/",
+    "type": "Personal Project | 3D Expriments",
+    "name": "ThreeJS, Wave Demo",
+    "imgSrc": "/assets/img/work1-min.jpg"
+  },
+  {
+    "url": "https://jasper-threejs-video-explode.netlify.app",
+    "type": "Personal Project | 3D Expriments",
+    "name": "ThreeJS, Video Explode Particle",
+    "imgSrc": "/assets/img/work8-min.jpg"
+  },
+  {
+    "url": "https://jasper-threejs-noise-beauty.netlify.app",
+    "type": "Personal Project | 3D Expriments",
+    "name": "ThreeJS, Noise Beauty",
+    "imgSrc": "/assets/img/work6-min.jpg"
+  },
+  {
+    "url": "https://jaspetham.github.io/Icosahedron/",
+    "type": "Personal Project | 3D Expriments",
+    "name": "ThreeJS, Icosahedron",
+    "imgSrc": "/assets/img/work7-min.jpg"
+  },
+  {
+    "url": "https://jasper-threejs-particles-map.netlify.app",
+    "type": "Personal Project | 3D Expriments",
+    "name": "ThreeJS, Particles Map",
+    "imgSrc": "/assets/img/work4-min.jpg"
+  },
+  {
+    "url": "https://jasper-threejs-explode-particle.netlify.app/",
+    "type": "Personal Project | 3D Expriments",
+    "name": "ThreeJS, Explode Particle",
+    "imgSrc": "/assets/img/work9-min.jpg"
+  },
+  {
+    "url": "https://jasper-threejs-pixel-distortion.netlify.app",
+    "type": "Personal Project | 3D Expriments",
+    "name": "ThreeJS, Pixel Distortions",
+    "imgSrc": "/assets/img/work5-min.jpg"
+  }
+]
