@@ -24,7 +24,7 @@ const projects = ref(works);
       >
         <div v-for="index in 8" :key="index" class="hover-point"></div>
         <div class="box-contents">
-          <img class="box-img" :src="project.imgSrc" alt="" />
+          <img loading="lazy" class="box-img" :src="project.imgSrc" alt="" />
           <div class="box-details">
             <div class="box-subtitle">{{ project.type }}</div>
             <div class="box-title">{{ project.name }}</div>
