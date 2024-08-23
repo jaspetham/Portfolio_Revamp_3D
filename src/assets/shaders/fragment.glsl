@@ -56,9 +56,9 @@ float SineCrazy(vec3 p){
 
 float scene(vec3 p){
   vec3 p1 = rotate(p, vec3(1.,1.,1.), time * 0.25);
-  float scale = 20. + 15. * (sin(time / 2.) * timeMultiply);
+  float scale = 10. + 10. * (sin(time * .5) * timeMultiply);
   return max(
-    mix(sphere(p1),sdCutHollowSphere(p1,.71,.71,.71),shape),
+    mix(sphere(p1),sdCutHollowSphere(p1,.5,.5,.5),shape),
     (1.-SineCrazy(p1*scale))/scale
   );
 }
@@ -95,7 +95,7 @@ void main(){
   p.y -= mouse.y * 0.025;
 
 
-  vec3 camPos = vec3(0.,0.,cameraZPos + (1. * sin(time* 0.5)* 0.25));
+  vec3 camPos = vec3(0.,0.,cameraZPos + (1. * sin(time * 0.5)* 0.25));
 
   vec3 ray = normalize(vec3(p, -1.));
 
@@ -109,7 +109,7 @@ void main(){
 
   for(int i=0; i<=64; i++){
     curDist = scene(rayPos);
-    rayLen += 0.6 * curDist;
+    rayLen += .5 * curDist;
     rayPos = camPos + ray * rayLen;
 
     if(abs(curDist) < 0.001){
@@ -117,8 +117,6 @@ void main(){
 
       float diff = dot(n,light);
 
-      // color = GetColor(diff);
-      // color = GetColor(2. * length(rayPos));
       break;
     }
 
