@@ -75,9 +75,9 @@ const works = ref(history.works);
   .info-content .year{
     font-size:0.8vw;
     background:var(--clr-main);
-    color:white;
+    color:rgba(0, 0, 0, .4);
     width: fit-content;
-    padding: 0.25rem 0.5rem;
+    padding: 0.25rem 1rem;
     border-radius:25px;
     margin-bottom:1rem;
   }
