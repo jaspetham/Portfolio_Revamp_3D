@@ -18,7 +18,7 @@ class Canvas {
     this.currentPath = options.path;
 
     this.container.appendChild(this.renderer.domElement);
-    this.isOpen = true;
+    this.isOpen = false;
     this.camera = new THREE.PerspectiveCamera(
       70,
       window.innerWidth / window.innerHeight,
@@ -49,6 +49,7 @@ class Canvas {
     window.addEventListener("pointermove", onMouseMove, false);
   }
   updateBallState(path) {
+    console.log(path);
     const animationParams = path === "/" ? { a: 0, b: 0.25 } : { a: 1, b: 2 };
     this.animationValue(animationParams.a, animationParams.b);
   }

@@ -18,7 +18,7 @@ watch(
 onMounted(() => {
   canvasInstance.value = new Canvas({
     dom: document.getElementById("container"),
-    path: currentPath
+    path: currentPath.value
   });
 });
 </script>
