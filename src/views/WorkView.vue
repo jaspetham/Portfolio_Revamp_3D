@@ -41,7 +41,10 @@ const projects = ref(works);
     display: grid;
     grid-template-columns: 1fr 1fr;
     margin-top:45vh;
-    width: 95vw;
+    width: 100%;
+    padding-inline:5vw;
+    column-gap:4rem;
+    row-gap:2rem;
     top:0;
     position: relative;
 }
@@ -53,17 +56,14 @@ const projects = ref(works);
 .work-item {
   -webkit-transform: translateZ(0);
   float: left;
-  margin: 2.5vw;
   position: relative;
-  width: 42.5vw;
+  width: 100%;
   cursor: pointer;
-  height: 22vw;
+  height: clamp(400px, 20vw, 600px);
 }
 
 .work-item img {
-  width: 42.5vw;
   object-fit: cover;
-  height: 22vw;
   transition: .5s opacity;
   opacity: .7;
   -webkit-transform: translateZ(0);
@@ -210,8 +210,7 @@ const projects = ref(works);
     margin-top: 25vh;
   }
   .work-item {
-    width: 85vw;
-    height: 44vw;
+    height: clamp(200px, 45vw, 400px);
   }
 }
 

@@ -8,13 +8,13 @@ import { useRoute } from "vue-router";
 
 const route = useRoute();
 const currentPath = ref(route.path);
-let sketchInstance = null;
+const sketchInstance = ref(null);
 
 watch(
   () => route.path,
   (newPath) => {
     currentPath.value = newPath;
-    if (sketchInstance) sketchInstance.updateBallState(newPath);
+    if (sketchInstance.value) sketchInstance.value.updateBallState(newPath);
   }
 );
 
@@ -52,8 +52,7 @@ onMounted(() => {
       this.render();
       this.setupResize();
       this.mouseEvents();
-      this.updateBallState(currentPath.value);
-      sketchInstance = this;
+      this.updateBallState(route.path);
     }
     mouseEvents() {
       this.mouse = new THREE.Vector2();
@@ -131,7 +130,6 @@ onMounted(() => {
     }
 
     addObjects() {
-      let that = this;
       this.material = new THREE.ShaderMaterial({
         extensions: {
           derivatives: "#extension GL_OES_standard_derivatives : enable",
@@ -177,7 +175,7 @@ onMounted(() => {
       this.renderer.render(this.scene, this.camera);
     }
   }
-  new Sketch({
+  sketchInstance.value = new Sketch({
     dom: document.getElementById("container"),
   });
 });

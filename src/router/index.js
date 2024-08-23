@@ -1,8 +1,4 @@
-import { createRouter, createWebHistory } from 'vue-router'
-import HomeView from '../views/HomeView.vue'
-import WorkView from '../views/WorkView.vue'
-import AboutView from '../views/AboutView.vue'
-import HistoryView from "../views/HistoryView.vue";
+import { createRouter, createWebHistory } from "vue-router";
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -10,22 +6,22 @@ const router = createRouter({
     {
       path: "/",
       name: "home",
-      component: HomeView
+      component: () => import("../views/HomeView.vue")
     },
     {
       path: "/work",
       name: "work",
-      component: WorkView
+      component: () => import("../views/WorkView.vue")
     },
     {
       path: "/about",
       name: "about",
-      component: AboutView
+      component: () => import("../views/AboutView.vue")
     },
     {
       path: "/history",
       name: "history",
-      component: HistoryView
+      component: () => import("../views/HistoryView.vue")
     },
     // Catch-all route for 404 errors
     {
@@ -35,4 +31,4 @@ const router = createRouter({
   ]
 });
 
-export default router
+export default router;
