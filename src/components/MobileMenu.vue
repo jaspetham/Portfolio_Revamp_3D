@@ -4,10 +4,10 @@ import { storeToRefs } from "pinia";
 import { usePageStore } from "@/stores/page";
 import DownloadCV from "./DownloadCV.vue";
 const store = usePageStore();
-const { menuState } = storeToRefs(store);
+const { isMenuOpen } = storeToRefs(store);
 </script>
 <template>
-  <div :class="`menu ${menuState ? 'show' : ''}`">
+  <header :class="`menu ${isMenuOpen ? 'show' : ''}`">
     <ul class="menu-items">
       <li class="menu-item menu-home" data-link="home">
         <RouterLink to="/">home</RouterLink>
@@ -25,7 +25,7 @@ const { menuState } = storeToRefs(store);
         <DownloadCV/>
       </li>
     </ul>
-  </div>
+  </header>
 </template>
 
 <style lang="css" scoped>

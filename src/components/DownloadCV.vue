@@ -1,3 +1,3 @@
 <template>
-  <a class="btn" href="/2024_CV.pdf" download> Download CV </a>
+  <a class="btn" href="/Jasper_Tham_Resume.pdf" download> Download CV </a>
 </template>

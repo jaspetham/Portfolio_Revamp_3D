@@ -15,8 +15,8 @@ app.use(router)
 
 router.beforeEach((to, from, next) => {
     const store = usePageStore();
-    const { menuState } = storeToRefs(store);
-    menuState.value = false;
+    const { isMenuOpen } = storeToRefs(store);
+    isMenuOpen.value = false;
     next();
 });
 

@@ -7,7 +7,7 @@ const { globalScrollPos } = storeToRefs(store);
 const { setMenuState } = store;
 </script>
 <template>
-  <div :class="`header ${globalScrollPos > 250 ? 'scrolled' : ''}`">
+  <header :class="`header ${globalScrollPos > 250 ? 'scrolled' : ''}`">
     <div class="header-menu flex justify-end items-center">
       <ul class="menu-items">
         <li class="menu-item menu-home"><RouterLink to="/">home</RouterLink></li>
@@ -25,7 +25,7 @@ const { setMenuState } = store;
       <span></span>
       <span></span>
     </div>
-  </div>
+  </header>
 </template>
 
 <style lang="css" scoped>

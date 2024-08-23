@@ -4,7 +4,7 @@ import DownloadCV from './DownloadCV.vue';
 </script>
 
 <template>
-  <div class="footer-menu">
+  <footer class="footer-menu">
     <ul class="menu-items">
       <li class="menu-item menu-work"><RouterLink to="work">work</RouterLink></li>
       <li class="menu-item menu-about"><RouterLink to="about">about</RouterLink></li>
@@ -13,7 +13,7 @@ import DownloadCV from './DownloadCV.vue';
         <DownloadCV/>
       </li>
     </ul>
-  </div>
+  </footer>
 </template>
 
 <style lang="css" scoped>

@@ -10,14 +10,9 @@ import { usePageStore } from "@/stores/page";
 import { computed } from "vue";
 const Scene = defineAsyncComponent(() => import("./components/Scene.vue"));
 const store = usePageStore();
-const { menuState } = storeToRefs(store);
+const { isMenuOpen } = storeToRefs(store);
 const route = useRoute();
-const isHomePage = computed(() => {
-    if(route.path === "/"){
-        return true;
-    }
-    return false;
-});
+const isHomePage = computed(() => route.path === "/");
 </script>
 
 <template>
@@ -26,7 +21,7 @@ const isHomePage = computed(() => {
     <Bar :barType="'top'" v-if="isHomePage" />
   </Transition>
   <Transition name="opacity">
-    <MobileMenu v-if="menuState" />
+    <MobileMenu v-if="isMenuOpen" />
   </Transition>
   <Transition name="slide-bottom">
     <Footer v-if="isHomePage" />
