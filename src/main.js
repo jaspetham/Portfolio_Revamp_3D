@@ -1,5 +1,6 @@
 import './assets/main.css'
 import './assets/tailwind.css'
+import "lineicons/dist/lineicons.css";
 
 import { createApp, computed } from 'vue'
 import { createPinia, storeToRefs } from "pinia";

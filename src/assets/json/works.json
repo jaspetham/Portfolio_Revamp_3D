@@ -1,5 +1,17 @@
 [
   {
+    "url": "https://jasper-node-data-visualiser.netlify.app/",
+    "type": "Personal Project | 3D Node Visualiser",
+    "name": "Javascript, 3D Node Visualiser",
+    "imgSrc": "/img/node-data.png"
+  },
+  {
+    "url": "https://jasper-porsche-3d.netlify.app/",
+    "type": "Personal Project |Porsche 3D",
+    "name": "VueJS, 3D Car (WIP)",
+    "imgSrc": "/img/porsche.png"
+  },
+  {
     "url": "https://jasper-3d-map.netlify.app/",
     "type": "Personal Project |3D Map with Mapbox Search",
     "name": "NextJS, 3D Map",
