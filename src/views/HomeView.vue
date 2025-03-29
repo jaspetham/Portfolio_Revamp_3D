@@ -24,7 +24,7 @@
   .title{
     text-transform: uppercase;
     text-align: center;
-    font-size: 5vw;
+    font-size: clamp(30px,8vw,60px);
     letter-spacing: 2.6vw;
     color: var(--clr-main);
     color: hsla(var(--hsl-main), 1);
@@ -43,7 +43,7 @@
   .sub-title{
     text-transform: uppercase;
     text-align: center;
-    font-size: 1.5vw;
+    font-size: clamp(10px,2vw,20px);
     letter-spacing: 1.75vw;
     text-indent: 1.8vw;
     top: 0;
