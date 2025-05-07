@@ -1,14 +1,20 @@
 [
   {
+    "url": "jasper-chat-bot.netlify.app",
+    "type": "Personal Project | AI Chat Bot",
+    "name": "NuxtJS, Jasper Chat Bot",
+    "imgSrc": "/img/chat.png"
+  },
+  {
     "url": "https://jasper-node-data-visualiser.netlify.app/",
-    "type": "Personal Project | 3D Node Visualiser",
-    "name": "Javascript, 3D Node Visualiser",
+    "type": "Personal Project | ThreeJS Node Visualiser",
+    "name": "ThreeJS, 3D Node Visualiser",
     "imgSrc": "/img/node-data.png"
   },
   {
     "url": "https://jasper-porsche-3d.netlify.app/",
-    "type": "Personal Project |Porsche 3D",
-    "name": "VueJS, 3D Car (WIP)",
+    "type": "Personal Project | ThreeJS Car Website",
+    "name": "VueJS + ThreeJS, 3D Car (WIP)",
     "imgSrc": "/img/porsche.png"
   },
   {
