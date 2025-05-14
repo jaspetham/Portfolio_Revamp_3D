@@ -1,6 +1,12 @@
 [
   {
-    "url": "https://jasper-chat-bot.netlify.app/",
+    "url": "https://jasper-porsche-3d.netlify.app/",
+    "type": "Personal Project | ThreeJS Car Website",
+    "name": "VueJS + ThreeJS, 3D Car (WIP)",
+    "imgSrc": "/img/porsche.png"
+  },
+  {
+    "url": "https://chat.jasper.re/",
     "type": "Personal Project | AI Chat Bot",
     "name": "NuxtJS, Jasper Chat Bot",
     "imgSrc": "/img/chat.png"
